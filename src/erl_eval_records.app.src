@@ -1,0 +1,11 @@
+{application, erl_eval_records, [
+  {description, "Erlang library for using records in erl_eval"},
+  {vsn, "1.0.0"},
+  {registered, []},
+  {applications, [
+    kernel,
+    stdlib
+  ]},
+  {licenses, ["Apache-2.0"]},
+  {links, [{"GitHub", "https://github.com/petrkozorezov/erl_eval_records"}]}
+]}.
