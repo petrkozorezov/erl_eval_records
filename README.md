@@ -9,12 +9,12 @@ This magic consist of:
  * extract result code from fake function
 
 Interface of this simple helper module contains functions represented 2 phases:
- * `load/1` (or `load_all/1`) to load record information from module(s) with records
+ * `load/1` (or `load_all/1`) to load records information from module(s)
  * `expand/2` expand records in given expressions
 
 
 ```erlang
--record(test, {a}).
+-record(foo, {a}).
 
 test() ->
   {ok, Tokens  , _} = erl_scan:string("#foo{a=A} = {foo, 0}, A."),
